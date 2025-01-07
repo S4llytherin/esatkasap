@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ESAT KASAP</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+    <style>
+        body,
+        html {
+            height: 100%
+        }
+
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Amatic SC", sans-serif
+        }
+
+        .menu {
+            display: none
+        }
+
+        .bgimg {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(kasapdede.jpeg);
+            min-height: 90%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar sitenin tepesi -->
+    <div class="w3-top w3-hide-small">
+        <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+            <a href="#" class="w3-bar-item w3-button">ANA SAYFA</a>
+            <a href="#menu" class="w3-bar-item w3-button">MENÜ</a>
+            <a href="#about" class="w3-bar-item w3-button">HAKKIMIZDA</a>
+            <a href="#myMap" class="w3-bar-item w3-button">İLETİŞİM</a>
+        </div>
+    </div>
+
+    <!-- Header görselli -->
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-bottomleft w3-padding">
+            <span class="w3-tag w3-xlarge">HER GÜN 10:00 - 00:00</span>
+        </div>
+        <div class="w3-display-middle w3-center">
+            <span class="w3-text-white w3-hide-small" style="font-size:100px">ESAT<br>KASAP & STEAKHOUSE</span>
+            <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>ESAT<br>KASAP
+                    & STEAKHOUSE</b></span>
+            <p><a href="#menu" class="w3-button w3-xxlarge w3-black">MENÜYÜ GÖR</a></p>
+        </div>
+    </header>
+
+    <!-- Menü kısmı -->
+    <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+        <div class="w3-content">
+
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">menü</h1>
+            <div class="w3-row w3-center w3-border w3-border-dark-grey">
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">ŞEFİN ÖNERİLERİ</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">SALATALAR</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">TATLILAR</div>
+                </a>
+            </div>
+
+            <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+                <h1><b>Izgara Dana Sosis</b> <span class="w3-right w3-tag w3-dark-grey w3-round">400,00 ₺</span></h1>
+                <p class="w3-text-grey">PAPRİKALI DOĞAL DİNLENDİRİLMİŞ ETLERLE HAZIRLADIĞIMIZ KATKISIZ SOSİS IZGARA</p>
+                <hr>
+
+                <h1><b>Kuzu Kokoreç</b> <span class="w3-right w3-tag w3-dark-grey w3-round">420,00 ₺</span></h1>
+                <p class="w3-text-grey">KUZU KABURGA VE PİRZOLA ETİNDEN YAPTIĞIMIZ MUHTEŞEM LEZZET
+
+                </p>
+                <hr>
+
+                <h1><b>PIRLANTA</b> <span class="w3-right w3-tag w3-dark-grey w3-round">700,00 ₺</span></h1>
+                <p class="w3-text-grey">120 GR SEMI DRY-AGED BLACK ANGUS’UN EN MERMERİSİMSİ DOKUYA SAHİP BÖLGESİNDEN
+                    ÇIKARILAN ÇOK ÖZEL BİR LEZZET!
+
+                </p>
+                <hr>
+
+                <h1><b>ANTRİKOT KÖFTE</b> <span class="w3-right w3-tag w3-dark-grey w3-round">370,00 ₺</span></h1>
+                <p class="w3-text-grey">ANTRİKOT ETİNDEN ÖZEL OLARAK YAPILAN MÜKEMMEL LEZZETLİ ÇİFT ÇEKİM KÖFTE</p>
+                <hr>
+
+                <h1><b>SICAK DANA CARPACCIO</b> <span class="w3-tag w3-red w3-round">Popüler!</span><span
+                        class="w3-right w3-tag w3-dark-grey w3-round">600,00 ₺</span></h1>
+                <p class="w3-text-grey">İNCECİK DİLİMLENMİŞ BONFİLE ETLERİ, İÇİNDE ERİMİŞ MOZARELLA VE ROKA İLE</p>
+                <hr>
+
+                <h1><b>SPECIAL BONFİLE</b> <span class="w3-tag w3-grey w3-round">YENİ</span><span
+                        class="w3-right w3-tag w3-dark-grey w3-round">1200,00 ₺</span></h1>
+                <p class="w3-text-grey">EKŞİ MAYALI EKMEK ÜZERİNDE TEREYAĞI, TAZE KEKİK VE BİBERİYE İLE ÖZEL ŞEKİLDE
+                    PİŞİRİLEN BONFİLE. TAM BİR LEZZET PATLAMASI!</p>
+            </div>
+
+            <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+                <h1><b>AKDENİZ YEŞİLLİKLERİ</b> <span class="w3-tag w3-grey w3-round">Popüler</span> <span
+                        class="w3-right w3-tag w3-dark-grey w3-round">290,00 ₺</span></h1>
+                <p class="w3-text-grey">AKDENİZ YEŞİLLİKLERİ, ICEBERG, ROKA, REYHAN, TAZE NANE, DOMATES, BALSAMİC
+                    VINEGRETTE SOS</p>
+                <hr>
+
+                <h1><b>TULUM PEYNİRLİ ŞEFİN SALATASI</b> <span class="w3-right w3-tag w3-dark-grey w3-round">350,00 ₺</span></h1>
+                <p class="w3-text-grey">AKDENİZ YEŞİLLİKLERİ, ICEBERG, ROKA, REYHAN, TAZE NANE, CEVİZ, KURU ÜZÜM, TULUM
+                    PEYNİRİ, DOMATES, BALSAMİC VINEGRETTE SOS </p>
+                <hr>
+
+                <h1><b>ÇITIR HELLİMLİ SALATA</b> <span class="w3-right w3-tag w3-dark-grey w3-round">310,00 ₺</span></h1>
+                <p class="w3-text-grey">AKDENİZ YEŞİLLİKLERİ, ICEBERG, ROKA, REYHAN, TAZE NANE, DOMATES, KURU ÜZÜM,
+                    ÇITIR HELLİM PARÇALARI, BALSAMİC VINEGRETTE SOS</p>
+                <hr>
+
+                <h1><b>ÇITIR TAVUKLU SALATA</b> <span class="w3-right w3-tag w3-dark-grey w3-round">330,00 ₺</span></h1>
+                <p class="w3-text-grey">AKDENİZ YEŞİLLİKLERİ, ICEBERG, ROKA, REYHAN, TAZE NANE, DOMATES, KURU ÜZÜM,
+                    ÇITIR TAVUK PARÇALARI, BALLI HARDAL SOS
+                </p>
+            </div>
+
+
+            <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+                <h1><b>San Sebastian Cheesecake</b> <span class="w3-tag w3-grey w3-round">YENİ</span><span
+                        class="w3-right w3-tag w3-dark-grey w3-round">220,00 ₺</span></h1>
+                <p class="w3-text-grey">ÇİKOLATA SOS İLE</p>
+                <hr>
+
+                <h1><b>Portakallı ve Havuçlu Islak Kek</b> <span class="w3-right w3-tag w3-dark-grey w3-round">260,00 ₺</span></h1>
+                <p class="w3-text-grey">KREM PEYNİRİ KREMASI İLE</p>
+                <hr>
+
+                <h1><b>Kestane & Kahveli Cheesecake</b> <span class="w3-right w3-tag w3-dark-grey w3-round">240,00 ₺</span></h1>
+                <p class="w3-text-grey">KESTANE ŞEKERİ İLE</p>
+                <hr>
+
+                <h1><b>The House Pasta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">290,00 ₺</span></h1>
+                <p class="w3-text-grey">FRAMBUAZ VE BİTTER ÇİKOLATALI ISLAK KEK</p>
+            </div><br>
+
+        </div>
+    </div>
+
+    <!-- Alt KISIM -->
+    <div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+        <div class="w3-content">
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">HAKKIMIZDA</h1>
+            <p>Müşterilerimizin tüm duyularını tatmin eden muhteşem ziyafetler sunuyoruz.</p>
+            <p><strong>ŞEF Mİ?</strong> Salih Tunahan Başol</p>
+            
+            <h1><b>AÇILIŞ SAATLERİ</b></h1>
+
+            <div class="w3-row">
+                <div class="w3-col s6">
+                    <p>HAFTA İÇİ 10:00 - 00:00</p>
+                    <p>HAFTA SONU 10:00 - 00:00</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+    </div>
+
+    <!-- Footer Bölümü -->
+    <footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+        <p>Powered by S4lly</p>
+    </footer>
+
+    <script>
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-red";
+        }
+        document.getElementById("myLink").click();
+    </script>
+
+</body>
+
+</html>
